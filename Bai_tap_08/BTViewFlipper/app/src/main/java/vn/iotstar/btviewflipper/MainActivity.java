@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void loadImagesFromApi() {
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("http://app.iotstar.vn:8081/appfoods/flipper/coffee.jpg")
+                .baseUrl("http://app.iotstar.vn:8081/appfoods/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
         ApiService apiService = retrofit.create(ApiService.class);

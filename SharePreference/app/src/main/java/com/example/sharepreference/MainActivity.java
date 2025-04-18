@@ -32,6 +32,15 @@ public class MainActivity extends AppCompatActivity {
         });
         AnhXa();
         sharedPreferences = getSharedPreferences("dataLogin", MODE_PRIVATE);
+        boolean check = sharedPreferences.getBoolean("check", false);
+        if (check) {
+            String savedUsername = sharedPreferences.getString("username", "");
+            String savedPassword = sharedPreferences.getString("password", "");
+            usernameTxt.setText(savedUsername);
+            passwordTxt.setText(savedPassword);
+            cbmemberme.setChecked(true);
+        }
+
         buttonTxt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

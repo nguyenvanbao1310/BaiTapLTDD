@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Video Shorts</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="login_button">Login</string>
+    <string name="register_prompt">Don\'t have an account? Register here</string>
+</resources>
